@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biographie Mickaël Guedj - Concert "Sur le thème du Bleu"</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #e8f4f8 0%, #b8d4e8 100%);
+            line-height: 1.6;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+        }
+        h1 {
+            color: #1e5a8e;
+            text-align: center;
+            border-bottom: 3px solid #4a90c9;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+            font-size: 2em;
+        }
+        h2 {
+            color: #2c6ba0;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            border-left: 5px solid #4a90c9;
+            padding-left: 15px;
+        }
+        .bio-box {
+            background: #f0f8ff;
+            padding: 30px;
+            border-radius: 8px;
+            border-left: 4px solid #1e5a8e;
+            margin-bottom: 30px;
+        }
+        .bio-text {
+            text-align: justify;
+            color: #333;
+            font-size: 1.05em;
+            line-height: 1.8;
+        }
+        .copy-btn {
+            background: linear-gradient(135deg, #4a90c9 0%, #6bb3e0 100%);
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 600;
+            margin-top: 20px;
+            font-size: 1em;
+            transition: all 0.3s ease;
+        }
+        .copy-btn:hover {
+            background: linear-gradient(135deg, #6bb3e0 0%, #4a90c9 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(74, 144, 201, 0.3);
+        }
+        .titre {
+            font-weight: bold;
+            color: #1e5a8e;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+        .info-concert {
+            background: #fff9e6;
+            border-left: 4px solid #4a90c9;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 5px;
+        }
+        .info-concert h3 {
+            color: #1e5a8e;
+            margin-top: 0;
+        }
+        .note {
+            background: #e8f4f8;
+            border-left: 4px solid #4a90c9;
+            padding: 15px;
+            margin-top: 30px;
+            font-style: italic;
+            color: #555;
+        }
+        .highlight {
+            color: #1e5a8e;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎵 Concert "Sur le thème du Bleu" 🎵</h1>
+        
+        <div class="info-concert">
+            <h3>📅 Informations du Concert</h3>
+            <p><strong>Date :</strong> Samedi 1er février 2026</p>
+            <p><strong>Artistes :</strong> Mickaël Guedj (Baryton) & Bruno Membrey (Piano)</p>
+            <p><strong>Thématique :</strong> Un voyage musical autour de la couleur bleue</p>
+        </div>
+
+        <h2>Mickaël Guedj - Baryton lyrique</h2>
+        <div class="bio-box">
+            <div class="bio-text" id="bio-mickael">
+<strong>Mickaël GUEDJ, baryton lyrique.</strong> Passionné de chant depuis l'âge de 12 ans, il conquiert très jeune le public en remportant ses premiers concours nationaux et internationaux. Sa voix chaleureuse et sa présence scénique magnétique le mènent du Conservatoire d'Antibes, auprès d'Albert Lance et Iris Parel, jusqu'au CRR de Nice où il obtient son DEM mention Très Bien.
+
+Artiste au parcours atypique, il aime décloisonner les genres pour offrir quelque chose de nouveau dans le respect et la qualité : opéra, pop lyrique, variété internationale, cabaret et comédies musicales se mêlent avec élégance dans ses interprétations. Des rôles lyriques qui bouleversent (Escamillo dans "Carmen", Figaro dans "Le Barbier de Séville") aux shows télévisés aux côtés de Serge Lama pour "Napoléon" sur France 2, il touche les cœurs dans les lieux les plus prestigieux : Théâtre Antique d'Orange, La Chaise-Dieu, Madeleine à Paris, Sporting de Monaco.
+
+<strong>Pour ce concert inédit sur le thème du bleu</strong>, Mickaël retrouve avec grand plaisir le pianiste Bruno Membrey pour un voyage musical poétique et coloré. Du bleu profond des océans au bleu azur du ciel méditerranéen, en passant par les teintes mélancoliques ou joyeuses de cette couleur emblématique, ce récital explore un répertoire varié où opérette, chanson française et variété internationale se rencontrent dans une palette d'émotions. Des "Mots bleus" aux airs les plus célèbres évoquant cette couleur fascinante, ce concert promet un moment d'évasion et de partage, porté par la complicité artistique des deux musiciens et l'amour de la belle musique.
+            </div>
+            <button class="copy-btn" onclick="copyBio('bio-mickael')">📋 Copier la biographie</button>
+        </div>
+
+        <div class="note">
+            <strong>💡 Mode d'emploi :</strong> Cliquez simplement sur le bouton "Copier la biographie" ci-dessus. Le texte sera automatiquement copié dans votre presse-papiers, prêt à être collé dans votre document (programme, affiche, site web, etc.).
+        </div>
+
+        <div class="note" style="margin-top: 20px; background: #fff;">
+            <strong>📸 Photos professionnelles :</strong> Vous trouverez une sélection de photos haute qualité dans le dossier "photos" pour illustrer le programme du concert.
+        </div>
+    </div>
+
+    <script>
+        function copyBio(elementId) {
+            const bioText = document.getElementById(elementId).innerText;
+            navigator.clipboard.writeText(bioText).then(function() {
+                alert('✓ Biographie copiée avec succès dans le presse-papiers !\n\nVous pouvez maintenant la coller où vous le souhaitez (Ctrl+V ou Cmd+V).');
+            }, function(err) {
+                alert('❌ Erreur lors de la copie. Veuillez sélectionner et copier le texte manuellement.');
+            });
+        }
+    </script>
+</body>
+</html>

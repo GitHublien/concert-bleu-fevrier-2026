@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programme Concert "Sur le thème du Bleu" - 1er février 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Cinzel:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Cormorant Garamond', serif;
+            background: linear-gradient(135deg, #0a1628 0%, #1a2f4f 50%, #2a4a6f 100%);
+            min-height: 100vh;
+            padding: 60px 20px;
+            position: relative;
+            overflow-x: hidden;
+        }
+        
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 20% 50%, rgba(100, 149, 237, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(135, 206, 235, 0.1) 0%, transparent 50%);
+            pointer-events: none;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+            padding: 80px 70px;
+            border-radius: 3px;
+            box-shadow: 
+                0 30px 90px rgba(0, 0, 0, 0.4),
+                0 0 1px rgba(255, 255, 255, 0.5) inset,
+                0 0 100px rgba(100, 149, 237, 0.2);
+            position: relative;
+            border: 1px solid rgba(100, 149, 237, 0.2);
+        }
+        
+        .ornament-top, .ornament-bottom {
+            text-align: center;
+            color: #2c5282;
+            font-size: 2em;
+            opacity: 0.3;
+            letter-spacing: 20px;
+            margin: 20px 0;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 60px;
+            padding-bottom: 40px;
+            border-bottom: 2px solid #d4af37;
+            position: relative;
+        }
+        
+        .header::after {
+            content: '◆';
+            position: absolute;
+            bottom: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+            padding: 0 15px;
+            color: #d4af37;
+            font-size: 1.2em;
+        }
+        
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5em;
+            font-weight: 700;
+            color: #1a365d;
+            margin-bottom: 25px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            line-height: 1.2;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .subtitle {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.8em;
+            font-weight: 300;
+            font-style: italic;
+            color: #4a5568;
+            letter-spacing: 2px;
+            margin-top: 20px;
+        }
+        
+        .event-date {
+            font-family: 'Cinzel', serif;
+            font-size: 1.3em;
+            color: #2c5282;
+            margin-top: 30px;
+            font-weight: 500;
+            letter-spacing: 1px;
+        }
+        
+        .artists {
+            text-align: center;
+            margin: 60px 0;
+            padding: 50px 40px;
+            background: linear-gradient(135deg, rgba(100, 149, 237, 0.05) 0%, rgba(135, 206, 235, 0.05) 100%);
+            border-top: 1px solid rgba(100, 149, 237, 0.2);
+            border-bottom: 1px solid rgba(100, 149, 237, 0.2);
+            position: relative;
+        }
+        
+        .artists::before, .artists::after {
+            content: '✦';
+            position: absolute;
+            color: #d4af37;
+            font-size: 1.5em;
+            opacity: 0.4;
+        }
+        
+        .artists::before {
+            top: 20px;
+            left: 40px;
+        }
+        
+        .artists::after {
+            bottom: 20px;
+            right: 40px;
+        }
+        
+        .artists-title {
+            font-family: 'Cinzel', serif;
+            font-size: 1.6em;
+            color: #2c5282;
+            margin-bottom: 35px;
+            letter-spacing: 3px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        
+        .artist-name {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.8em;
+            color: #1a365d;
+            margin: 18px 0;
+            font-weight: 500;
+            letter-spacing: 1px;
+        }
+        
+        .artist-role {
+            font-size: 0.75em;
+            color: #718096;
+            font-weight: 300;
+            font-style: italic;
+        }
+        
+        .conference-section {
+            margin-top: 30px;
+            padding-top: 25px;
+            border-top: 1px solid rgba(100, 149, 237, 0.15);
+        }
+        
+        .organization {
+            margin-top: 30px;
+            font-size: 1.1em;
+            color: #718096;
+            font-style: italic;
+        }
+        
+        .program {
+            margin-top: 60px;
+        }
+        
+        .program-title {
+            font-family: 'Cinzel', serif;
+            font-size: 2.2em;
+            color: #1a365d;
+            text-align: center;
+            margin-bottom: 50px;
+            letter-spacing: 4px;
+            font-weight: 600;
+            text-transform: uppercase;
+            position: relative;
+            padding-bottom: 20px;
+        }
+        
+        .program-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 150px;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #d4af37, transparent);
+        }
+        
+        .piece {
+            padding: 25px 0;
+            margin: 20px 0;
+            border-bottom: 1px solid rgba(100, 149, 237, 0.1);
+            transition: all 0.4s ease;
+            position: relative;
+        }
+        
+        .piece:hover {
+            padding-left: 15px;
+        }
+        
+        .piece-number {
+            font-family: 'Cinzel', serif;
+            display: inline-block;
+            color: #d4af37;
+            font-size: 1.4em;
+            font-weight: 600;
+            margin-right: 25px;
+            min-width: 35px;
+            text-align: right;
+        }
+        
+        .piece-content {
+            display: inline-block;
+            vertical-align: top;
+            width: calc(100% - 70px);
+        }
+        
+        .piece-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.7em;
+            color: #1a365d;
+            font-weight: 600;
+            margin-bottom: 8px;
+            letter-spacing: 0.5px;
+        }
+        
+        .piece-artist {
+            font-family: 'Cormorant Garamond', serif;
+            color: #718096;
+            font-size: 1.3em;
+            font-style: italic;
+            font-weight: 300;
+        }
+        
+        .instrumental {
+            background: linear-gradient(90deg, transparent, rgba(147, 112, 219, 0.03), transparent);
+        }
+        
+        .instrumental-label {
+            display: inline-block;
+            font-family: 'Cinzel', serif;
+            color: #6b46c1;
+            font-size: 0.85em;
+            margin-top: 8px;
+            padding: 5px 15px;
+            border: 1px solid rgba(147, 112, 219, 0.3);
+            border-radius: 20px;
+            letter-spacing: 1px;
+            font-weight: 500;
+        }
+        
+        .entracte {
+            text-align: center;
+            margin: 60px 0;
+            padding: 35px;
+            position: relative;
+        }
+        
+        .entracte::before, .entracte::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 200px;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #d4af37, transparent);
+        }
+        
+        .entracte::before {
+            top: 0;
+        }
+        
+        .entracte::after {
+            bottom: 0;
+        }
+        
+        .entracte h3 {
+            font-family: 'Cinzel', serif;
+            color: #2c5282;
+            font-size: 1.5em;
+            letter-spacing: 3px;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+        
+        .footer {
+            margin-top: 70px;
+            padding-top: 40px;
+            border-top: 2px solid #d4af37;
+            text-align: center;
+            position: relative;
+        }
+        
+        .footer::before {
+            content: '◆';
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+            padding: 0 15px;
+            color: #d4af37;
+            font-size: 1.2em;
+        }
+        
+        .footer p {
+            font-family: 'Cormorant Garamond', serif;
+            color: #718096;
+            font-size: 1.2em;
+            font-style: italic;
+            margin: 10px 0;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 20px;
+            }
+            body::before {
+                display: none;
+            }
+            .container {
+                box-shadow: none;
+                border: 1px solid #ddd;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 50px 30px;
+            }
+            h1 {
+                font-size: 2.5em;
+            }
+            .piece-number {
+                display: block;
+                margin-bottom: 10px;
+            }
+            .piece-content {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="ornament-top">❖</div>
+        
+        <div class="header">
+            <h1>Sur le Thème du Bleu</h1>
+            <div class="subtitle">Concert Lyrique et Musical</div>
+            <div class="event-date">Dimanche 1er Février 2026</div>
+        </div>
+
+        <div class="artists">
+            <div class="artists-title">Artistes</div>
+            <div class="artist-name">
+                Mickaël Guedj
+                <div class="artist-role">Baryton</div>
+            </div>
+            <div class="artist-name">
+                Bruno Membrey
+                <div class="artist-role">Piano</div>
+            </div>
+            
+            <div class="conference-section">
+                <div class="artist-name">
+                    Yvan Gastaut
+                    <div class="artist-role">Conférencier</div>
+                </div>
+            </div>
+            
+            <div class="organization">
+                Organisation : Marie Scholtes
+            </div>
+        </div>
+
+        <div class="program">
+            <div class="program-title">Programme</div>
+
+            <div class="piece">
+                <span class="piece-number">I</span>
+                <div class="piece-content">
+                    <div class="piece-title">Les mots bleus</div>
+                    <div class="piece-artist">Christophe</div>
+                </div>
+            </div>
+
+            <div class="piece">
+                <span class="piece-number">II</span>
+                <div class="piece-content">
+                    <div class="piece-title">Plus bleu que tes yeux</div>
+                    <div class="piece-artist">Charles Aznavour</div>
+                </div>
+            </div>
+
+            <div class="piece">
+                <span class="piece-number">III</span>
+                <div class="piece-content">
+                    <div class="piece-title">L'amour est bleu</div>
+                    <div class="piece-artist">Vicky Leandros / André Popp</div>
+                </div>
+            </div>
+
+            <div class="piece">
+                <span class="piece-number">IV</span>
+                <div class="piece-content">
+                    <div class="piece-title">Volare</div>
+                    <div class="piece-artist">Domenico Modugno</div>
+                </div>
+            </div>
+
+            <div class="piece instrumental">
+                <span class="piece-number">V</span>
+                <div class="piece-content">
+                    <div class="piece-title">Le beau Danube bleu</div>
+                    <div class="piece-artist">Johann Strauss II</div>
+                    <div class="instrumental-label">Piano Solo • Transcription Billy Mayerl</div>
+                </div>
+            </div>
+
+            <div class="piece">
+                <span class="piece-number">VI</span>
+                <div class="piece-content">
+                    <div class="piece-title">Blue Moon</div>
+                    <div class="piece-artist">Frank Sinatra</div>
+                </div>
+            </div>
+
+            <div class="piece">
+                <span class="piece-number">VII</span>
+                <div class="piece-content">
+                    <div class="piece-title">L'hymne à l'amour</div>
+                    <div class="piece-artist">Édith Piaf</div>
+                </div>
+            </div>
+
+            <div class="entracte">
+                <h3>Entracte</h3>
+            </div>
+
+            <div class="piece">
+                <span class="piece-number">VIII</span>
+                <div class="piece-content">
+                    <div class="piece-title">Bleu blanc blond</div>
+                    <div class="piece-artist">Marcel Amont</div>
+                </div>
+            </div>
+
+            <div class="piece">
+                <span class="piece-number">IX</span>
+                <div class="piece-content">
+                    <div class="piece-title">Méditerranée</div>
+                    <div class="piece-artist">Francis Lopez</div>
+                </div>
+            </div>
+
+            <div class="piece instrumental">
+                <span class="piece-number">X</span>
+                <div class="piece-content">
+                    <div class="piece-title">Blue Rondo A La Turk</div>
+                    <div class="piece-artist">Dave Brubeck</div>
+                    <div class="instrumental-label">Piano Solo</div>
+                </div>
+            </div>
+
+            <div class="piece">
+                <span class="piece-number">XI</span>
+                <div class="piece-content">
+                    <div class="piece-title">L'oiseau et l'enfant</div>
+                    <div class="piece-artist">Marie Myriam</div>
+                </div>
+            </div>
+
+            <div class="piece">
+                <span class="piece-number">XII</span>
+                <div class="piece-content">
+                    <div class="piece-title">Rien que du bleu</div>
+                    <div class="piece-artist">Enrico Macias</div>
+                </div>
+            </div>
+
+            <div class="piece">
+                <span class="piece-number">XIII</span>
+                <div class="piece-content">
+                    <div class="piece-title">Chanson bleue</div>
+                    <div class="piece-artist">Sacha Distel</div>
+                </div>
+            </div>
+
+            <div class="piece">
+                <span class="piece-number">XIV</span>
+                <div class="piece-content">
+                    <div class="piece-title">Blue Eyes</div>
+                    <div class="piece-artist">Elton John</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Programme susceptible de modifications</p>
+            <p>14 morceaux • 12 chansons • 2 pièces instrumentales</p>
+        </div>
+        
+        <div class="ornament-bottom">❖</div>
+    </div>
+</body>
+</html>

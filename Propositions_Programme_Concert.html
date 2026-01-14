@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propositions Programme Concert "Bleu" - 1er février 2026</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #e8f4f8 0%, #b8d4e8 100%);
+            line-height: 1.6;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+        }
+        h1 {
+            color: #1e5a8e;
+            text-align: center;
+            border-bottom: 3px solid #4a90c9;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #2c6ba0;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            border-left: 5px solid #4a90c9;
+            padding-left: 15px;
+        }
+        .intro {
+            background: #f0f8ff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            border-left: 4px solid #4a90c9;
+        }
+        .legend {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #f0f8ff;
+            border-radius: 8px;
+            flex-wrap: wrap;
+        }
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .legend-box {
+            width: 20px;
+            height: 20px;
+            border-radius: 3px;
+        }
+        .ok { background: #90EE90; }
+        .ajoute { background: #87CEEB; }
+        .reflexion { background: #FFE4B5; }
+        .instrumental { background: #DDA0DD; }
+        .adapte { background: #F0E68C; }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th {
+            background: #1e5a8e;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+        }
+        td {
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+        }
+        tr:hover {
+            background: #f5f5f5;
+        }
+        a {
+            color: #1e5a8e;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        a:hover {
+            color: #4a90c9;
+            text-decoration: underline;
+        }
+        .status {
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-weight: 600;
+            display: inline-block;
+            font-size: 0.9em;
+        }
+        .status-ok {
+            background: #90EE90;
+            color: #006400;
+        }
+        .status-ajoute {
+            background: #87CEEB;
+            color: #00008B;
+        }
+        .status-reflexion {
+            background: #FFE4B5;
+            color: #8B4513;
+        }
+        .status-instrumental {
+            background: #DDA0DD;
+            color: #4B0082;
+        }
+        .status-adapte {
+            background: #F0E68C;
+            color: #8B4513;
+        }
+        .status-partition-ok {
+            background: #90EE90;
+            color: #006400;
+        }
+        .status-partition-chercher {
+            background: #FFE4B5;
+            color: #8B4513;
+        }
+        .notes {
+            background: #fff9e6;
+            border-left: 4px solid #4a90c9;
+            padding: 15px;
+            margin-top: 20px;
+        }
+        .note-text {
+            font-style: italic;
+            color: #666;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎵 Propositions Programme Concert "Sur le thème du Bleu" 🎵</h1>
+        <p style="text-align: center; color: #666; margin-bottom: 30px;">
+            <strong>Date :</strong> Samedi 1er février 2026<br>
+            <strong>Artistes :</strong> Mickaël Guedj (Baryton) & Bruno Membrey (Piano)
+        </p>
+
+        <div class="intro">
+            <p><strong>Bonjour Bruno,</strong></p>
+            <p>J'ai bien étudié ta liste de morceaux et je te remercie pour ces belles propositions ! Comme convenu lors de notre échange téléphonique, je me suis permis d'ajouter quelques titres.</p>
+            <p>J'ai gardé plusieurs de tes morceaux. Pour certains autres, j'ai quelques réflexions à partager avec toi.</p>
+            <p>Voici mes propositions pour que nous puissions en discuter ensemble et construire un programme qui nous convienne à tous les deux !</p>
+        </div>
+
+        <div class="legend">
+            <div class="legend-item">
+                <div class="legend-box ok"></div>
+                <span><strong>Conservé</strong> - Morceau de ta liste que je garde</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-box ajoute"></div>
+                <span><strong>Ajouté</strong> - Nouveau morceau que je propose</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-box reflexion"></div>
+                <span><strong>À discuter</strong> - J'hésite encore</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-box instrumental"></div>
+                <span><strong>Piano solo</strong> - Pour toi (pas de chant)</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-box adapte"></div>
+                <span><strong>À adapter</strong> - Nécessite ajustement</span>
+            </div>
+        </div>
+
+        <h2>📋 Morceaux de Ta Liste que Je Conserve</h2>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Titre</th>
+                    <th>Artiste/Compositeur</th>
+                    <th>Statut</th>
+                    <th>Partition</th>
+                    <th>🎧 Écouter</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Les mots bleus</td>
+                    <td>Christophe</td>
+                    <td><span class="status status-ok">✓ Conservé</span></td>
+                    <td><span class="status status-partition-ok">✓ Partition OK</span></td>
+                    <td><a href="https://www.youtube.com/watch?v=Td11UOF8dns" target="_blank">YouTube</a></td>
+                </tr>
+                <tr>
+                    <td>Plus bleu que tes yeux</td>
+                    <td>Charles Aznavour</td>
+                    <td><span class="status status-ok">✓ Conservé</span></td>
+                    <td><span class="status status-partition-ok">✓ Partition OK</span></td>
+                    <td><a href="https://www.youtube.com/watch?v=URZjUOYFBus" target="_blank">YouTube</a></td>
+                </tr>
+                <tr>
+                    <td>Volare</td>
+                    <td>Domenico Modugno</td>
+                    <td><span class="status status-ok">✓ Conservé</span></td>
+                    <td><span class="status status-partition-ok">✓ Partition OK</span></td>
+                    <td><a href="https://www.youtube.com/watch?v=6jWsIpAbo-8" target="_blank">YouTube</a></td>
+                </tr>
+                <tr>
+                    <td>Blue Moon</td>
+                    <td>Frank Sinatra</td>
+                    <td><span class="status status-ok">✓ Conservé</span></td>
+                    <td><span class="status status-partition-ok">✓ Partition OK</span></td>
+                    <td><a href="https://www.youtube.com/watch?v=Dw1ZC6sZjIY" target="_blank">YouTube</a></td>
+                </tr>
+                <tr>
+                    <td>Méditerranée</td>
+                    <td>Francis Lopez</td>
+                    <td><span class="status status-ok">✓ Conservé</span></td>
+                    <td><span class="status status-partition-ok">✓ Partition OK</span></td>
+                    <td><a href="https://youtu.be/3KD6rLjhWIw" target="_blank">YouTube</a></td>
+                </tr>
+                <tr>
+                    <td>La planète bleue</td>
+                    <td>Claude Nougaro</td>
+                    <td><span class="status status-reflexion">? À discuter</span></td>
+                    <td><span class="status status-partition-ok">✓ Partition OK</span></td>
+                    <td><a href="https://www.youtube.com/watch?v=rUaXwpHDVm4" target="_blank">YouTube</a></td>
+                </tr>
+                <tr>
+                    <td>Fleur bleue</td>
+                    <td>Charles Trenet</td>
+                    <td><span class="status status-reflexion">? À discuter</span></td>
+                    <td><span class="status status-partition-ok">✓ Partition OK</span></td>
+                    <td><a href="https://www.youtube.com/watch?v=tk2Q1E9scZA" target="_blank">YouTube</a></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>➕ Morceaux que Je Souhaiterais Ajouter</h2>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Titre</th>
+                    <th>Artiste</th>
+                    <th>Statut</th>
+                    <th>Partition</th>
+                    <th>🎧 Écouter</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>L'amour est bleu (Love is Blue)</td>
+                    <td>Vicky Leandros / André Popp</td>
+                    <td><span class="status status-ajoute">+ Ajouté</span></td>
+                    <td><span class="status status-partition-chercher">⚠ À chercher</span></td>
+                    <td><a href="https://www.youtube.com/watch?v=u68Z2B36-3c" target="_blank">YouTube</a></td>
+                </tr>
+                <tr>
+                    <td>L'hymne à l'amour</td>
+                    <td>Édith Piaf</td>
+                    <td><span class="status status-ajoute">+ Ajouté</span></td>
+                    <td><span class="status status-partition-ok">✓ Partition OK</span></td>
+                    <td><a href="https://www.youtube.com/watch?v=HL-VZEhtwWI" target="_blank">YouTube</a></td>
+                </tr>
+                <tr>
+                    <td>Bleu blanc blond</td>
+                    <td>Marcel Amont</td>
+                    <td><span class="status status-ajoute">+ Ajouté</span></td>
+                    <td><span class="status status-partition-chercher">⚠ À chercher</span></td>
+                    <td><a href="https://www.youtube.com/watch?v=DLxjhWdUz7Q" target="_blank">YouTube</a></td>
+                </tr>
+                <tr>
+                    <td>L'oiseau et l'enfant</td>
+                    <td>Marie Myriam</td>
+                    <td><span class="status status-ajoute">+ Ajouté</span></td>
+                    <td><span class="status status-partition-chercher">⚠ À chercher</span></td>
+                    <td><a href="https://www.youtube.com/watch?v=uwJUhRWpk4E" target="_blank">YouTube</a></td>
+                </tr>
+                <tr>
+                    <td>Rien que du bleu</td>
+                    <td>Enrico Macias</td>
+                    <td><span class="status status-ajoute">+ Ajouté</span></td>
+                    <td><span class="status status-partition-chercher">⚠ À chercher</span></td>
+                    <td><a href="https://www.youtube.com/watch?v=8EWUUXXUc_8" target="_blank">YouTube</a></td>
+                </tr>
+                <tr>
+                    <td>Chanson bleue</td>
+                    <td>Sacha Distel</td>
+                    <td><span class="status status-ajoute">+ Ajouté</span></td>
+                    <td><span class="status status-partition-chercher">⚠ À chercher</span></td>
+                    <td><a href="https://www.youtube.com/watch?v=mY48O4vN4Q4" target="_blank">YouTube</a></td>
+                </tr>
+                <tr>
+                    <td>Blue Eyes</td>
+                    <td>Elton John</td>
+                    <td><span class="status status-ajoute">+ Ajouté</span></td>
+                    <td><span class="status status-partition-chercher">⚠ À chercher</span></td>
+                    <td><a href="https://www.youtube.com/watch?v=4CiyKeSnSxk" target="_blank">YouTube</a></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>🎹 Morceaux Instrumentaux (Piano Solo - Bruno)</h2>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Titre</th>
+                    <th>Compositeur</th>
+                    <th>Statut</th>
+                    <th>Partition</th>
+                    <th>🎧 Écouter</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Tango bleu (Blue Tango)</td>
+                    <td>Leroy Anderson</td>
+                    <td><span class="status status-instrumental">🎹 Piano solo</span></td>
+                    <td><span class="status status-partition-ok">✓ Partition OK</span></td>
+                    <td><a href="https://www.youtube.com/watch?v=-HXMyAtwhmY" target="_blank">YouTube</a></td>
+                </tr>
+                <tr>
+                    <td>Blue Rondo A La Turk</td>
+                    <td>Dave Brubeck</td>
+                    <td><span class="status status-instrumental">🎹 Piano solo</span></td>
+                    <td><span class="status status-partition-ok">✓ Partition OK</span></td>
+                    <td><a href="https://www.youtube.com/watch?v=Rwy1Lw_YUA0" target="_blank">YouTube</a></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>❌ Morceaux Non Retenus</h2>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Titre</th>
+                    <th>Compositeur</th>
+                    <th>Statut</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Tout Bleu (L'Auberge du Cheval Blanc)</td>
+                    <td>Ralph Benatsky</td>
+                    <td><span class="status status-adapte">⚠ Non retenu</span></td>
+                </tr>
+                <tr>
+                    <td>Mon beau ciel bleu (Rose de Noël)</td>
+                    <td>Franz Lehár</td>
+                    <td><span class="status status-adapte">⚠ Non retenu</span></td>
+                </tr>
+                <tr>
+                    <td>Blue Skies</td>
+                    <td>Irving Berlin</td>
+                    <td><span class="status status-adapte">⚠ Non retenu</span></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>📊 Comparaison avec Tes Propositions Initiales</h2>
+        
+        <div class="notes" style="background: #e8f4f8;">
+            <strong>📋 Tes 13 propositions initiales :</strong><br>
+            • <strong>11 morceaux à chanter</strong> (dont L'amour est bleu qui était instrumental mais j'ai trouvé la version chantée)<br>
+            • <strong>2 morceaux piano solo</strong> pour toi (Tango bleu, Blue Rondo A La Turk)<br><br>
+            
+            <strong>🎵 Mon programme envisagé (sans La planète bleue et Fleur bleue) :</strong><br>
+            • <strong>11 morceaux à chanter</strong> :<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;- 5 de tes propositions conservées (Les mots bleus, Plus bleu que tes yeux, Volare, Blue Moon, Méditerranée)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;- 6 morceaux que j'ajoute (L'amour est bleu, L'hymne à l'amour, Bleu blanc blond, L'oiseau et l'enfant, Rien que du bleu, Chanson bleue, Blue Eyes)<br>
+            • <strong>2 morceaux piano solo</strong> pour toi (Tango bleu, Blue Rondo A La Turk)<br><br>
+            
+            <strong>✅ Conclusion :</strong> On garde le même équilibre que tes propositions initiales : <strong>11 morceaux chantés + 2 piano solo</strong> = 13 morceaux au total !
+        </div>
+
+        <div class="notes">
+            <strong>💬 En résumé :</strong><br>
+            • <strong>5 morceaux conservés</strong> de ta liste (partitions OK)<br>
+            • <strong>2 morceaux à discuter ensemble</strong> (La planète bleue, Fleur bleue - partitions OK) - <em>non comptés dans le programme envisagé ci-dessus</em><br>
+            • <strong>7 morceaux que je souhaiterais ajouter</strong> (dont L'amour est bleu et L'hymne à l'amour)<br>
+            • <strong>2 morceaux instrumentaux</strong> pour toi au piano (partitions OK)<br>
+            • <strong>3 morceaux non retenus</strong><br><br>
+            <strong>🎵 Partitions :</strong> Tu as les partitions pour tes morceaux. J'ai celle de L'hymne à l'amour (version Josh Groban). Il reste à trouver les partitions pour les 6 autres morceaux que je propose.<br><br>
+            <strong>🎵 Prochaine étape :</strong> Qu'en penses-tu ? Avec ça, on pourrait avoir une idée du programme définitif. Je suis ouvert à tes suggestions.
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparaison Programme Concert "Bleu" - 1er février 2026</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #e8f4f8 0%, #b8d4e8 100%);
+            line-height: 1.6;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+        }
+        h1 {
+            color: #1e5a8e;
+            text-align: center;
+            border-bottom: 3px solid #4a90c9;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #2c6ba0;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            border-left: 5px solid #4a90c9;
+            padding-left: 15px;
+        }
+        .legend {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #f0f8ff;
+            border-radius: 8px;
+        }
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .legend-box {
+            width: 20px;
+            height: 20px;
+            border-radius: 3px;
+        }
+        .garde { background: #90EE90; }
+        .remplace { background: #FFB6C1; }
+        .ajoute { background: #87CEEB; }
+        .instrumental { background: #FFD700; }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th {
+            background: #1e5a8e;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+        }
+        td {
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+        }
+        tr:hover {
+            background: #f5f5f5;
+        }
+        .status {
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-weight: 600;
+            display: inline-block;
+        }
+        .status-garde {
+            background: #90EE90;
+            color: #006400;
+        }
+        .status-remplace {
+            background: #FFB6C1;
+            color: #8B0000;
+        }
+        .status-ajoute {
+            background: #87CEEB;
+            color: #00008B;
+        }
+        .status-instrumental {
+            background: #FFD700;
+            color: #8B4513;
+        }
+        .notes {
+            background: #fff9e6;
+            border-left: 4px solid #4a90c9;
+            padding: 15px;
+            margin-top: 20px;
+            font-style: italic;
+        }
+        .section-title {
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #1e5a8e;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎵 Programme Concert "Sur le thème du Bleu" 🎵</h1>
+        <p style="text-align: center; color: #666; margin-bottom: 30px;">
+            <strong>Date :</strong> Samedi 1er février 2026<br>
+            <strong>Artistes :</strong> Mickaël Guedj (Baryton) & Bruno Membrey (Piano)
+        </p>
+
+        <div class="legend">
+            <div class="legend-item">
+                <div class="legend-box garde"></div>
+                <span><strong>Gardé</strong> - Morceau de Bruno conservé</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-box ajoute"></div>
+                <span><strong>Ajouté</strong> - Nouveau morceau proposé par Mickaël</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-box instrumental"></div>
+                <span><strong>Instrumental</strong> - Piano solo (Bruno)</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-box remplace"></div>
+                <span><strong>Non retenu</strong> - Morceau de Bruno non conservé</span>
+            </div>
+        </div>
+
+        <h2>📋 Programme Final Proposé par Mickaël</h2>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>N°</th>
+                    <th>Titre</th>
+                    <th>Artiste/Compositeur</th>
+                    <th>Statut</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Les mots bleus</td>
+                    <td>Christophe</td>
+                    <td><span class="status status-garde">✓ Gardé</span></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>L'hymne à l'amour</td>
+                    <td>Édith Piaf</td>
+                    <td><span class="status status-ajoute">+ Ajouté</span></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Bleu blanc blond</td>
+                    <td>Marcel Amont</td>
+                    <td><span class="status status-ajoute">+ Ajouté</span></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Volare (Dans le bleu du ciel bleu)</td>
+                    <td>Domenico Modugno</td>
+                    <td><span class="status status-garde">✓ Gardé</span></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>L'oiseau et l'enfant</td>
+                    <td>Marie Myriam</td>
+                    <td><span class="status status-ajoute">+ Ajouté</span></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Plus bleu que tes yeux</td>
+                    <td>Charles Aznavour</td>
+                    <td><span class="status status-garde">✓ Gardé</span></td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Rien que du bleu</td>
+                    <td>Enrico Macias</td>
+                    <td><span class="status status-ajoute">+ Ajouté</span></td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Chanson bleue</td>
+                    <td>Sacha Distel</td>
+                    <td><span class="status status-ajoute">+ Ajouté</span></td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Blue Eyes</td>
+                    <td>Elton John</td>
+                    <td><span class="status status-ajoute">+ Ajouté</span></td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Blue Moon</td>
+                    <td>Frank Sinatra</td>
+                    <td><span class="status status-garde">✓ Gardé</span></td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>La planète bleue</td>
+                    <td>Claude Nougaro</td>
+                    <td><span class="status status-garde">✓ Gardé</span></td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>Fleur bleue</td>
+                    <td>Charles Trenet</td>
+                    <td><span class="status status-garde">✓ Gardé</span></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>🎹 Morceaux Instrumentaux Possibles (Piano Solo - Bruno)</h2>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Titre</th>
+                    <th>Compositeur</th>
+                    <th>Note</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Love is Blue</td>
+                    <td>André Popp</td>
+                    <td><span class="status status-instrumental">Piano Solo</span></td>
+                </tr>
+                <tr>
+                    <td>Tango bleu (Blue Tango)</td>
+                    <td>Leroy Anderson</td>
+                    <td><span class="status status-instrumental">Piano Solo</span></td>
+                </tr>
+                <tr>
+                    <td>Blue Rondo A La Turk</td>
+                    <td>Dave Brubeck</td>
+                    <td><span class="status status-instrumental">Piano Solo</span></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>❌ Morceaux de Bruno Non Retenus</h2>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Titre</th>
+                    <th>Compositeur</th>
+                    <th>Raison</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Blue Skies</td>
+                    <td>Irving Berlin</td>
+                    <td><span class="status status-remplace">Ne plaît pas</span></td>
+                </tr>
+                <tr>
+                    <td>Méditerranée</td>
+                    <td>Francis Lopez</td>
+                    <td><span class="status status-remplace">Mot "bleu" incertain</span></td>
+                </tr>
+                <tr>
+                    <td>Tout Bleu (L'Auberge du Cheval Blanc)</td>
+                    <td>Ralph Benatsky</td>
+                    <td><span class="status status-remplace">Duo - À voir</span></td>
+                </tr>
+                <tr>
+                    <td>Mon beau ciel bleu (Rose de Noël)</td>
+                    <td>Franz Lehár</td>
+                    <td><span class="status status-remplace">Ne plaît pas</span></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="notes">
+            <strong>📝 Résumé :</strong><br>
+            • <strong>6 morceaux gardés</strong> de la liste de Bruno<br>
+            • <strong>6 morceaux ajoutés</strong> par Mickaël<br>
+            • <strong>3 morceaux instrumentaux possibles</strong> pour Bruno en solo<br>
+            • <strong>4 morceaux non retenus</strong> de la liste initiale<br><br>
+            <strong>⚠️ À faire :</strong> Trouver les partitions pour tous les morceaux sélectionnés
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,7 @@
+[build]
+  publish = "."
+  
+[[redirects]]
+  from = "/*"
+  to = "/Programme_Concert_1er_Fevrier_2026.html"
+  status = 200

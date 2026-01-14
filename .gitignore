@@ -1,0 +1,28 @@
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers temporaires
+*.tmp
+*.bak
+~*
+
+# Fichiers Word
+*.docx
+*.doc
+
+# Fichiers texte de travail (sauf instructions)
+Message*.txt
+Email*.txt
+WhatsApp*.txt
+Chansons*.txt
+Programme_Chansons*.txt
+README*.txt
+
+# Scripts de déploiement (contiennent des tokens)
+deploy-github.ps1
+deploy*.ps1
+
+# Fichiers de configuration locale
+.env
+.env.local
